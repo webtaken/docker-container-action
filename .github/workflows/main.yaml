@@ -1,0 +1,16 @@
+name: CI
+on:
+  push:
+    branches: [main]
+
+env:
+  NAME: saul
+
+jobs:
+  container-action-job:
+    runs-on: ubuntu-latest
+    container:
+      image: saul2000/docker-action:v1
+    steps:
+      - name: Running container
+        run: docker run saul2000/docker-action:v1 ${{env.NAME}}
