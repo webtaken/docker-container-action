@@ -1,3 +1,3 @@
 #!/bin/sh -l
 
-echo "Hello $1"
+echo "Hello to all of you"

@@ -15,4 +15,3 @@ jobs:
       - name: Running container
         run: |
           ls
-          docker run saul2000/docker-action:v1 ${{env.NAME}}
